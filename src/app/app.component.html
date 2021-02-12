@@ -1,11 +1,14 @@
 <mat-toolbar color="primary">
+
   <mat-toolbar-row class="first-row">
-        <span>Title</span>
-        <button mat-button routerLink="/">Home</button>
-        <button mat-button [mat-menu-trigger-for]="category">category</button>
-        <mat-menu #category="matMenu" class="category">
+    <img src="../assets/logo.jpg"/>
+        <span style="font-family: cursive;">Mushroom</span>
+        
+        <button mat-button routerLink="/"><mat-icon>home</mat-icon></button>
+        <button mat-button [mat-menu-trigger-for]="category">Products</button>
+        <mat-menu #category="matMenu" class="category" >
           <!--(click)="drawer.toggle()"-->
-          <button mat-menu-item *ngFor="let category of categoryList" routerLink="/orders">
+          <button mat-menu-item  *ngFor="let category of categoryList" routerLink="/orders">
             {{category}}</button>
         </mat-menu>
         <div class="search">
@@ -22,10 +25,25 @@
           </button>
 
   </mat-toolbar-row>
- 
+
 </mat-toolbar>
 <div class="container">
   <router-outlet></router-outlet>
+</div>
+<div class="footer">
+<div><span>
+  contact
+</span>
+<p></p></div>
+
+<div><span>
+  copyright
+</span>
+<p></p></div>
+<div><span>
+  read me
+</span>
+<p></p>
 </div>
 
 

@@ -13,7 +13,7 @@
   <mat-drawer-container>
     <mat-drawer  mode="side" opened>
       <div class="price">
-        <h1 style="color:pink">My preference</h1>
+        <h1 style="color:#C2185B">My preference</h1>
         <h2>Price</h2>
       <mat-form-field>
         <mat-label matPrefix>$</mat-label>
@@ -29,13 +29,12 @@
     </div>
       <div class="rate">
         <h2>Rate</h2>
-        <div class="rate-mini" style="color: yellow">
+        <div class="rate-mini" style="color: yellow;">
        <div>
-         <mat-icon>grade</mat-icon>
-         <mat-icon>grade</mat-icon>
-         <mat-icon>grade</mat-icon>
-         <mat-icon>grade</mat-icon>
-         <mat-icon>grade</mat-icon>
+                  <mat-icon>grade</mat-icon>
+            <mat-icon>grade</mat-icon>
+            <mat-icon>grade</mat-icon>
+            <mat-icon>grade</mat-icon>
        </div>
           <button>up</button>
         </div>
@@ -62,21 +61,30 @@
       </div>
     </mat-drawer>
     <mat-drawer-content>
-      <mat-card routerLink="/detail" class="example-card">
+      <mat-card routerLink="/detail" *ngFor="let detail of details" class="example-card" >
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>lion's mane</mat-card-title>
-          <mat-card-subtitle>lion's mane</mat-card-subtitle>
+          <mat-card-title>{{detail.title}}</mat-card-title>
+          <mat-card-subtitle>{{detail.subtitle}}</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/lions-mane-table-top-farm-1.jpg" alt="Photo of lion's mane">
+        <img mat-card-image src="{{detail.imgUrl}}" alt="Photo of lion's mane">
         <mat-card-content>
           <p>
-            comment
+           Price:{{detail.price}}CAD
+
           </p>
+          <p>
+            <mat-icon>grade</mat-icon>
+            <mat-icon>grade</mat-icon>
+            <mat-icon>grade</mat-icon>
+            <mat-icon>star_border</mat-icon>
+            <mat-icon>star_border</mat-icon>
+            
+           </p>
+         
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
+          <button mat-button>buy it now</button>
         </mat-card-actions>
       </mat-card>
       <mat-card routerLink="/detail" class="example-card">
@@ -88,12 +96,20 @@
         <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/shiitake-table-top-farm-1.jpg" alt="Photo of Shiitake">
         <mat-card-content>
           <p>
-            comment
+            Price:200 CAD
           </p>
+          <p>
+            <mat-icon>grade</mat-icon>
+            <mat-icon>grade</mat-icon>
+            <mat-icon>grade</mat-icon>
+            <mat-icon>star_border</mat-icon>
+            <mat-icon>star_border</mat-icon>
+            
+           </p>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
+          <button mat-button>Buy it now!</button>
+        
         </mat-card-actions>
       </mat-card>
       <mat-card routerLink="/detail" class="example-card">
@@ -105,7 +121,7 @@
         <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/black-pearl-table-top-farm.jpg" alt="Photo of a black oyster grow kit">
         <mat-card-content>
           <p>
-            comment
+            Price:200 CAD
           </p>
         </mat-card-content>
         <mat-card-actions>
@@ -122,7 +138,7 @@
         <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/oyster-table-top-farm-1.jpg" alt="Photo of a fresh oyster">
         <mat-card-content>
           <p>
-            comment
+            Price:200 CAD
           </p>
         </mat-card-content>
         <mat-card-actions>

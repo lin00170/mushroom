@@ -1,36 +1,46 @@
 .title {
-  margin: 1% 10%;
+
+  
+  margin-top: 50px;
+  padding-top: 10px;
   display: grid;
   grid-template: auto / 1fr 1fr;
+  background-color:#424242;
+  width:100%;
+  color:white;
 }
 .title img{
   display: block;
-  margin: 3%;
-  width: 70%;
+  margin:5% 50%;
+  transform: translateX(-50%);
+  width: 60%;
+ 
 }
 p{
+  padding-top: 20px;
   font-size: 30px;
-  line-height: 100%;
-  margin: 30px 0;
 }
+
 .price{
+  margin:10px 0;
   font-weight: bold;
 }
 .number{
-  height: 30px;
-  font-size: 30px;
+  height: 20px;
+  font-size: 20px;
   line-height: 100%;
-  margin: 30px 0;
+  margin: 10px 0 0 0;
 }
+
 input{
   line-height: 100%;
   border:none;
-  width: 50px;
-  height: 30px;
+  width: 40px;
+  height: 20px;
   border-bottom:black 3px solid;
   text-align: center;
   text-justify: auto;
-  font-size: 20px;
+  font-size: 15px;
   margin: 10px;
 }
 .add-to{
@@ -38,6 +48,7 @@ margin: 30px 0;
 }
 .add-to button{
   margin:30px 40px 0 0;
+ 
 }
 .mat-divider{
   margin: 5%;
@@ -49,7 +60,7 @@ margin: 30px 0;
 }
 .comment{
   margin: 10px 200px;
-  height: 200px;
+
 }
 .mat-divider{
  margin: 5px 0;
