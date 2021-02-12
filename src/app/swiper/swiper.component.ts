@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 // import Swiper core and required components
-import SwiperCore,{Navigation, Pagination, Scrollbar, A11y,Autoplay,EffectCube} from 'swiper/core';
+import SwiperCore,{Navigation, Pagination, Scrollbar, A11y,Autoplay,EffectCube, EffectFlip} from 'swiper/core';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar,A11y,EffectCube,Autoplay]);
+SwiperCore.use([Navigation, Pagination, Scrollbar,A11y,EffectCube,Autoplay,EffectFlip]);
 
 @Component({
   selector: 'app-swiper',

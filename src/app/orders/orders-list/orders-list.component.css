@@ -1,37 +1,51 @@
 .container{
   overflow: hidden;
-  margin:5px 100px;
-}
-.mat-drawer-container{
-}
+  margin: auto;
+
+  }
+
 .mat-drawer{
   width: 200px;
   min-width: 200px;
-}
-.mat-drawer-content{
-  display: grid;
-  grid-template: auto / 1fr 1fr 1fr 1fr;
-}
-.example-card {
- min-width: 200px;
-  margin: 30px;
+  margin-left: 10px;
+  background-color: transparent;
+ 
+ 
 }
 
+.mat-drawer-content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  background-color: whitesmoke;
+  
+}
+.example-card {
+  width: 200px;
+  margin: 30px;
+  
+}
+
+
+
 .example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-image: url('https://secure.img1-fg.wfcdn.com/im/99678272/resize-h800%5Ecompr-r85/2961/29610548/%2527Mushroom+Tea+Party%2527+by+Andrea+Doss+Painting+Print+on+Wrapped+Canvas.jpg');
   background-size: cover;
 }
 .option{
-  margin-left: 90%;
+  margin-left: 80%;
 }
 .mat-drawer-container .mat-form-field{
   width: 50px;
   margin-right:15px;
   font-size: 20px;
+  
+ 
 }
 .mat-drawer-container input{
   line-height: 100%;
   text-align: center;
+  
 }
 .price h2,.rate h2{
   line-height: 100%;
@@ -42,7 +56,7 @@
   transform:scale(1,1);transition: all .1s ease-out;
 }
 .example-card:hover{
-  background: yellowgreen;
+  background: rgb(230, 157, 193);
   transform:scale(1.1,1.1);
 }
 .rate-mini{
@@ -50,3 +64,4 @@
   flex-flow: row nowrap;
    margin: 10px 0;
 }
+

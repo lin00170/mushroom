@@ -2,13 +2,13 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 30px;
+  margin: 5px;
 }
 
 .example-card{
   width: 20%;
-  min-width: 300px;
-  margin: 30px;
+  min-width: 200px;
+  margin: 20px;
   overflow: hidden;
   position:relative;
 }
@@ -20,14 +20,16 @@
   transform:scale(1,1);transition: all .3s ease-out;
 }
 .imgBox:hover{
-  transform:scale(1.2,1.2);
+  font-size: 30px;
+  font-weight: bold;
+  transform:scale(1.5,1.5);
 }
 
 .imgBox .img-tip{
   position:absolute;
   width: 50%;
-  background-color: #888888;
-  color: white;
+  background-color: #daa0c8;
+  color: rgb(37, 36, 36);
   top:50%;
   right: 50%;
   transform:translate(50%,-50%);
@@ -35,5 +37,6 @@
   line-height: 100%;
   text-align: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
+
 }

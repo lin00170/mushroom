@@ -1,8 +1,7 @@
 <swiper
   [slidesPerView]="1"
   [loop]="true"
-  [speed]="1500"
-  effect="cube"
+  [speed]="3000"
   (swiper)="onSwiper($event)"
   (slideChange)="onSlideChange()"
   [navigation]="true"
@@ -10,19 +9,19 @@
 >
   <ng-template swiperSlide >
     <div class="imgBox" routerLink="/detail">
-      <img  src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <img  src="https://s3.amazonaws.com/cdn.fieldforest.net/images/Slide_3.png" alt="Photo of a spawn">
     </div>
 
   </ng-template>
   <ng-template swiperSlide>
     <div class="imgBox" routerLink="/detail">
-      <img  src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <img  src="https://s3.amazonaws.com/cdn.fieldforest.net/images/Slide_2.jpg" alt="Photo of fresh">
     </div>
 
   </ng-template>
   <ng-template swiperSlide>
     <div class="imgBox" routerLink="/detail">
-      <img  src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <img  src="https://s3.amazonaws.com/cdn.fieldforest.net/images/Slide_1.jpg" alt="Photo of fresh">
     </div>
 
   </ng-template>
