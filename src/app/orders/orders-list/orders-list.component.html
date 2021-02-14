@@ -1,17 +1,25 @@
 
 <div class="container">
-  <div class="option">
-    <mat-form-field appearance="fill">
-      <mat-label>sort</mat-label>
+  <div class="sort">
+    
+    <div class="option">
       <mat-select>
         <mat-option *ngFor="let option of options" [value]="option">
           {{option}}
         </mat-option>
       </mat-select>
-    </mat-form-field>
+
   </div>
+  <div></div>
+  <div class="res">
+      30 results are found!
+  </div>
+</div>
   <mat-drawer-container>
-    <mat-drawer  mode="side" opened>
+    
+  
+     <mat-drawer  mode="side" opened>
+
       <div class="price">
         <h1 style="color:#C2185B">My preference</h1>
         <h2>Price</h2>
@@ -26,28 +34,35 @@
       <button mat-mini-fab color="accent">
         <mat-icon>check</mat-icon>
       </button>
-    </div>
+      </div>
+    
       <div class="rate">
         <h2>Rate</h2>
         <div class="rate-mini" style="color: yellow;">
        <div>
-                  <mat-icon>grade</mat-icon>
+            <mat-icon>grade</mat-icon>
+            <mat-icon>grade</mat-icon>
             <mat-icon>grade</mat-icon>
             <mat-icon>grade</mat-icon>
             <mat-icon>grade</mat-icon>
        </div>
+       
           <button>up</button>
         </div>
+      
+      
         <div class="rate-mini" style="color: yellow">
           <div>
             <mat-icon>grade</mat-icon>
             <mat-icon>grade</mat-icon>
             <mat-icon>grade</mat-icon>
-            <mat-icon>grade</mat-icon>
+            <mat-icon style="color: #e6ebf1">grade</mat-icon>
             <mat-icon style="color: #e6ebf1">grade</mat-icon>
           </div>
           <button>up</button>
         </div>
+     
+      
         <div class="rate-mini" style="color: yellow">
           <div>
             <mat-icon>grade</mat-icon>
@@ -59,163 +74,42 @@
           <button>up</button>
         </div>
       </div>
+    
     </mat-drawer>
+    
+
+
     <mat-drawer-content>
+      
+
       <mat-card routerLink="/detail" *ngFor="let detail of details" class="example-card" >
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{detail.title}}</mat-card-title>
-          <mat-card-subtitle>{{detail.subtitle}}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="{{detail.imgUrl}}" alt="Photo of lion's mane">
-        <mat-card-content>
-          <p>
-           Price:{{detail.price}}CAD
-
-          </p>
-          <p>
-            <mat-icon>grade</mat-icon>
-            <mat-icon>grade</mat-icon>
-            <mat-icon>grade</mat-icon>
-            <mat-icon>star_border</mat-icon>
-            <mat-icon>star_border</mat-icon>
-            
-           </p>
-         
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>buy it now</button>
-        </mat-card-actions>
-      </mat-card>
-      <mat-card routerLink="/detail" class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiitake</mat-card-title>
-          <mat-card-subtitle>Shiitake</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/shiitake-table-top-farm-1.jpg" alt="Photo of Shiitake">
-        <mat-card-content>
-          <p>
-            Price:200 CAD
-          </p>
-          <p>
-            <mat-icon>grade</mat-icon>
-            <mat-icon>grade</mat-icon>
-            <mat-icon>grade</mat-icon>
-            <mat-icon>star_border</mat-icon>
-            <mat-icon>star_border</mat-icon>
-            
-           </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>Buy it now!</button>
-        
-        </mat-card-actions>
-      </mat-card>
-      <mat-card routerLink="/detail" class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>black pearl oyster</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/black-pearl-table-top-farm.jpg" alt="Photo of a black oyster grow kit">
-        <mat-card-content>
-          <p>
-            Price:200 CAD
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-      <mat-card routerLink="/detail" class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>oyster</mat-card-title>
-          <mat-card-subtitle>fresh mushroom</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/oyster-table-top-farm-1.jpg" alt="Photo of a fresh oyster">
-        <mat-card-content>
-          <p>
-            Price:200 CAD
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-      <mat-card routerLink="/detail" class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Chestnut</mat-card-title>
-          <mat-card-subtitle>fresh mushroom</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_271_2966.jpg" alt="Photo of a chestnut">
-        <mat-card-content>
-          <p>
-            comment
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-      <mat-card routerLink="/detail" class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>comb tooth</mat-card-title>
-          <mat-card-subtitle>spawn</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_65_9200.jpg" alt="Photo of a comb tooth">
-        <mat-card-content>
-          <p>
-            comment
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-      <mat-card routerLink="/detail" class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Reishi</mat-card-title>
-          <mat-card-subtitle>spawn</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_67_7906.jpg" alt="Photo of a reishi">
-        <mat-card-content>
-          <p>
-            comment
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-      <mat-card routerLink="/detail" class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>honey mushroom</mat-card-title>
-          <mat-card-subtitle>grow kit</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_91_3820.jpg" alt="Photo of a honey mushroom">
-        <mat-card-content>
-          <p>
-            comment
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-    </mat-drawer-content>
-
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{detail.title}}</mat-card-title>
+        <mat-card-subtitle>{{detail.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{detail.imgUrl}}" alt="Photo of lion's mane">
+      <mat-card-content>
+        <p>
+         Price:{{detail.price}}CAD
+        </p>
+        <p>
+          <mat-icon>grade</mat-icon>
+          <mat-icon>grade</mat-icon>
+          <mat-icon>grade</mat-icon>
+          <mat-icon>star_border</mat-icon>
+          <mat-icon>star_border</mat-icon>
+         </p>
+       
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>buy it now</button>
+      </mat-card-actions>
+    </mat-card>
+                
+    
+  </mat-drawer-content>
+  
   </mat-drawer-container>
 </div>
 

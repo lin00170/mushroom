@@ -1,6 +1,7 @@
 .container{
   overflow: hidden;
-  margin:auto;
+  margin:0 0 0 0;
+  background-color: #303030;
 
   }
 
@@ -12,7 +13,11 @@
  
  
 }
-
+.price .mat-form-field{
+  width:50px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
 .mat-drawer-content{
   display: flex;
   flex-flow: row wrap;
@@ -32,16 +37,36 @@
   background-image: url('https://secure.img1-fg.wfcdn.com/im/99678272/resize-h800%5Ecompr-r85/2961/29610548/%2527Mushroom+Tea+Party%2527+by+Andrea+Doss+Painting+Print+on+Wrapped+Canvas.jpg');
   background-size: cover;
 }
-.option{
-  margin-left: 80%;
-}
-.mat-drawer-container .mat-form-field{
-  width: 50px;
-  margin-right:15px;
+
+.sort{
+  display: grid;
+  grid-template-columns:300px 300px 200px;
+  height: 100px;
+  }
+
+.sort .option{
+  margin-left: 210px;
+  height: 30px;
+  border: gray solid 1px;
+  border-radius: 5px;
+  width: 200px;
+  margin-top:60px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+ }
+
+ .sort .res{
+ margin-top: 60px;
+ line-height: 40px;
+ color:blanchedalmond
+    }
+
+.sort .option-field{
+  width: 200px;
   font-size: 20px;
-  
- 
 }
+
 .mat-drawer-container input{
   line-height: 100%;
   text-align: center;

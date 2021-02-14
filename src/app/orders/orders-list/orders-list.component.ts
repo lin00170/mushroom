@@ -44,7 +44,22 @@ details:detailCard[]=[
   subtitle:"fresh mushroom",
   price:200,
   commit: "",
-  imgUrl:"https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/lions-mane-table-top-farm-1.jpg"}
+  imgUrl:"https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_67_7906.jpg"},
+  {title:"lion's mane",
+  subtitle:"fresh mushroom",
+  price:200,
+  commit: "",
+  imgUrl:"https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_67_7906.jpg"},
+  {title:"lion's mane",
+  subtitle:"fresh mushroom",
+  price:200,
+  commit: "",
+  imgUrl:"https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_271_2966.jpg"},
+  {title:"lion's mane",
+  subtitle:"fresh mushroom",
+  price:200,
+  commit: "",
+  imgUrl:"https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_65_9200.jpg"},
 ]
 
   constructor() {
