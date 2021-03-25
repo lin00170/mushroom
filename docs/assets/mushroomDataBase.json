@@ -1,7 +1,7 @@
 [{   "id":1,
-	"title": "lion's mane",
+	"title": "Ghost Chanterelle",
 	"subtitle": "Spores",
-	"price": 100,
+	"price": 20,
     "quantity":50,
 	"commit": "",
 	"imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/lions-mane-table-top-farm-1.jpg",
@@ -18,9 +18,9 @@
 	}]
 }, {
     "id":2,
-	"title": "lion's mane",
+	"title": "Yellow Chanterelle",
 	"subtitle": "Spores",
-	"price": 200,
+	"price": 100,
     "quantity":40,
 	"commit": "",
 	"imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/shiitake-table-top-farm-1.jpg",
@@ -36,7 +36,7 @@
 		"name": "star_border"
 	}]
 }, {"id":3,
-	"title": "lion's mane",
+	"title": "Red Chanterelle",
 	"subtitle": "Freshis",
 	"price": 300,
     "quantity":20,
@@ -54,9 +54,9 @@
 		"name": "grade"
 	}]
 }, {"id":4,
-	"title": "lion's mane",
+	"title": "Winter Chanterelle",
 	"subtitle": "Grow-kits",
-	"price": 200,
+	"price": 400,
     "quantity":40,
 	"commit": "",
 	"imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_67_7906.jpg",
@@ -72,9 +72,9 @@
 		"name": "star_border"
 	}]
 }, {"id":5,
-	"title": "lion's mane",
+	"title": "Black Trumpet",
 	"subtitle": "Grow-kits",
-   "price": 200,
+   "price": 300,
    "quantity":40,
 	"commit": "",
 	"imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_271_2966.jpg",
@@ -112,7 +112,7 @@
 
 },  {  "id":7,
     
-        "title": "Lion's mane",
+        "title": "Hedgehog",
         "subtitle": "Spores",
         "price": 200,
         "quantity":40,
@@ -134,7 +134,7 @@
 
         }
         , { "id":8,
-            "title": "Honey mushroom",
+            "title": "Sweet tooth",
             "subtitle": "Freshis",
             "price": 200,
             "quantity":40,
@@ -156,7 +156,7 @@
         
         }
         , { "id":9,
-            "title": "Honey mushroom",
+            "title": "King Bolete",
             "subtitle": "Grow-kits",
             "price": 200,
             "quantity":40,
@@ -178,9 +178,9 @@
         
         }
         , { "id":10,
-            "title": "Honey mushroom",
+            "title": "Old man of the woods",
             "subtitle": "Freshis",
-            "price": 200,
+            "price": 600,
             "quantity":40,
             "commit": "",
             "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_65_9200.jpg",
@@ -200,9 +200,9 @@
         
         },
         {   "id":11,
-            "title": "lion's mane",
+            "title": "Slippery Jack",
             "subtitle": "Spores",
-            "price": 100,
+            "price": 900,
             "quantity":50,
             "commit": "",
             "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/lions-mane-table-top-farm-1.jpg",
@@ -221,7 +221,7 @@
             "id":12,
             "title": "lion's mane",
             "subtitle": "Spores",
-            "price": 200,
+            "price": 400,
             "quantity":40,
             "commit": "",
             "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/shiitake-table-top-farm-1.jpg",
@@ -237,9 +237,9 @@
                 "name": "star_border"
             }]
         }, {"id":13,
-            "title": "lion's mane",
+            "title": "Russell's Bolete",
             "subtitle": "Freshis",
-            "price": 300,
+            "price": 789,
             "quantity":20,
             "commit": "",
             "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_67_7906.jpg",
@@ -255,9 +255,9 @@
                 "name": "grade"
             }]
         }, {"id":14,
-            "title": "lion's mane",
+            "title": "Black Morel",
             "subtitle": "Grow-kits",
-            "price": 200,
+            "price": 250,
             "quantity":40,
             "commit": "",
             "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_67_7906.jpg",
@@ -273,9 +273,9 @@
                 "name": "star_border"
             }]
         }, {"id":15,
-            "title": "lion's mane",
+            "title": "Yellow Morel",
             "subtitle": "Freshis",
-           "price": 200,
+           "price": 150,
            "quantity":40,
             "commit": "",
             "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_271_2966.jpg",
@@ -291,9 +291,9 @@
                 "name": "grade"
             }]
         }, {"id":16,
-            "title": "Honey mushroom",
+            "title": "Crab Brittlegill",
             "subtitle": "Grow-kits",
-            "price": 200,
+            "price": 80,
             "quantity":40,
             "commit": "",
             "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_65_9200.jpg",
@@ -313,9 +313,9 @@
         
         },  {  "id":17,
             
-                "title": "Lion's mane",
+                "title": "Ash Tree Bolete",
                 "subtitle": "Freshis",
-                "price": 200,
+                "price": 888,
                 "quantity":40,
                 "commit": "",
                 "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/shiitake-table-top-farm-1.jpg",
@@ -335,9 +335,9 @@
         
                 }
                 , { "id":18,
-                    "title": "Honey mushroom",
+                    "title": "Oyster",
                     "subtitle": "Freshis",
-                    "price": 200,
+                    "price": 666,
                     "quantity":40,
                     "commit": "",
                     "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_65_9200.jpg",
@@ -357,9 +357,9 @@
                 
                 }
                 , { "id":19,
-                    "title": "Honey mushroom",
+                    "title": "Late Oyster",
                     "subtitle": "Grow-kits",
-                    "price": 200,
+                    "price": 555,
                     "quantity":40,
                     "commit": "",
                     "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_65_9200.jpg",
@@ -379,9 +379,9 @@
                 
                 }
                 , { "id":20,
-                    "title": "Honey mushroom",
+                    "title": "Jelly ear",
                     "subtitle": "Freshis",
-                    "price": 200,
+                    "price": 999,
                     "quantity":40,
                     "commit": "",
                     "imgUrl": "https://s3.amazonaws.com/cdn.fieldforest.net/images/uploads/category_65_9200.jpg",
