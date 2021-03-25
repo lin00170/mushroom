@@ -1,6 +1,4 @@
 .title {
-
-  
   padding-top: 10px;
   display: grid;
   grid-template: auto / 1fr 1fr;
@@ -36,7 +34,6 @@ input{
   border:none;
   width: 40px;
   height: 20px;
-  border-bottom:black 3px solid;
   text-align: center;
   text-justify: auto;
   font-size: 15px;
@@ -63,4 +60,9 @@ margin: 30px 0;
 }
 .mat-divider{
  margin: 5px 0;
+}
+.rate-mini{
+  display: flex;
+  flex-flow:row nowrap;
+  margin: 10px 0;
 }

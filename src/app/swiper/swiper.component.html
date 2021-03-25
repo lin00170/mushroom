@@ -8,19 +8,19 @@
   [autoplay]="{delay: 3000,disableOnInteraction: true}"
 >
   <ng-template swiperSlide >
-    <div class="imgBox" routerLink="/detail">
+    <div class="imgBox"  [routerLink]="['/detail','1']">
       <img  src="https://s3.amazonaws.com/cdn.fieldforest.net/images/Slide_3.png" alt="Photo of a spawn">
     </div>
 
   </ng-template>
   <ng-template swiperSlide>
-    <div class="imgBox" routerLink="/detail">
+    <div class="imgBox" [routerLink]="['/detail','3']">
       <img  src="https://s3.amazonaws.com/cdn.fieldforest.net/images/Slide_2.jpg" alt="Photo of fresh">
     </div>
 
   </ng-template>
   <ng-template swiperSlide>
-    <div class="imgBox" routerLink="/detail">
+    <div class="imgBox" [routerLink]="['/detail','5']">
       <img  src="https://s3.amazonaws.com/cdn.fieldforest.net/images/Slide_1.jpg" alt="Photo of fresh">
     </div>
 

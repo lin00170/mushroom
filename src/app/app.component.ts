@@ -21,7 +21,7 @@ export class AppComponent {
 
   title = 'my-app';
   value = '';
-  categoryList:string[]=['Spawn','Fresh','Grow-kits'];
+  categoryList:string[]=['Spores','Freshis','Grow-kits'];
   constructor() {
     
   }

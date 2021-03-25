@@ -1,8 +1,6 @@
 .container{
   overflow: hidden;
   margin:0 0 0 0;
-  background-color: #303030;
-
   }
 
 .mat-drawer{
@@ -10,8 +8,7 @@
   min-width: 200px;
   margin-left: 10px;
   background-color: transparent;
- 
- 
+
 }
 .price .mat-form-field{
   width:50px;
@@ -22,15 +19,12 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: left;
- 
-  
 }
 .example-card {
   width: 200px;
   margin: 30px;
   
 }
-
 
 
 .example-header-image {
@@ -88,5 +82,5 @@
   display: flex;
   flex-flow: row nowrap;
    margin: 10px 0;
+  
 }
-

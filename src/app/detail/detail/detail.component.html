@@ -1,28 +1,26 @@
 
 <div class="title" style="background-color:#424242">
   <div>
-    <img src="https://s3.amazonaws.com/cdn.fieldforest.net/images/thumb/shiitake-table-top-farm-1.jpg" alt="mushroom product oyster">
+    <img src="{{detail.imgUrl}}" alt="mushroom product oyster">
   </div>
   <div class="content" >
-    <p>Name,this is a...Name</p>
-    <div class="rate-mini" style="color:yellow">
-      <div>
-        <mat-icon>grade</mat-icon>
-        <mat-icon>grade</mat-icon>
-        <mat-icon>grade</mat-icon>
-        <mat-icon>star_border</mat-icon>
-        <mat-icon>star_border</mat-icon>
-      </div>
+    <p>{{detail.title}}</p>
+    <div  class="rate-mini" >
+      <div *ngFor="let rate of detail.rate" [ngStyle]="{color:'darkorange'}">
+        <mat-icon>{{rate.name}}</mat-icon>
+       </div>
     </div>
+
+   
     <mat-divider></mat-divider>
-    <h2 class="price">PRICE: $ 200.00</h2>
+    <h2 class="price">PRICE: ${{detail.price}}</h2>
   <div class="number">
     Number:
-    <button mat-mini-fab  color="accent">
+    <button mat-mini-fab  color="accent"(click)="remove()">
       <mat-icon>remove</mat-icon>
     </button>
-    <input type="text" value="1">
-    <button mat-mini-fab color="accent">
+    <input type="text" value="{{num}}">
+    <button mat-mini-fab color="accent" (click)="add()">
       <mat-icon>add</mat-icon>
     </button>
   </div>
@@ -50,5 +48,5 @@
     </div>
   </div>
   
-</div>
+
 

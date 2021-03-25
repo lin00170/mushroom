@@ -1,16 +1,16 @@
 <mat-toolbar color="primary">
 
   <mat-toolbar-row class="first-row">
-    <img src="./assets/logo.jpg"/>
-        <span style="font-family: cursive;">Mushroom</span>
+    <img routerLink="/" src="./assets/logo.jpg"/>
+        <span style="font-family: cursive;">Fungi</span>
         
         <button mat-button routerLink="/"><mat-icon>home</mat-icon></button>
    <div>
-        <button  mat-button *ngFor="let category of categoryList" routerLink="/orders">
+        <button  mat-button *ngFor="let category of categoryList" [routerLink]="['/orders',category]">
           {{category}}</button></div>
         <div class="search">
           <input matInput type="search"  [(ngModel)]="value">
-          <button mat-button routerLink="/orders">
+          <button mat-button   [routerLink]="['/orders','?'+value]">
             <mat-icon>search</mat-icon>
           </button>
         </div>

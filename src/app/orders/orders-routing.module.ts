@@ -8,7 +8,7 @@ const routes: Routes = [
     path:'',
     component:OrdersListComponent
   },
-  {path:'detail',loadChildren:()=>import('../detail/detail.module').then(m=>m.DetailModule)}
+  {path:'detail/:id',loadChildren:()=>import('../detail/detail.module').then(m=>m.DetailModule)}
 ];
 
 @NgModule({

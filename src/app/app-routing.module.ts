@@ -5,8 +5,8 @@ import {OrdersListComponent} from './orders/orders-list/orders-list.component'
 import {MessagesListComponent} from './messages/messages-list/messages-list.component'
 const routes: Routes = [
   {path:'',loadChildren:()=>import('./messages/messages.module').then(m=>m.MessagesModule)},
-  {path:'orders',loadChildren:()=>import('./orders/orders.module').then(m=>m.OrdersModule)},
-  {path:'detail',loadChildren:()=>import('./detail/detail.module').then(m=>m.DetailModule)},
+  {path:'orders/:id',loadChildren:()=>import('./orders/orders.module').then(m=>m.OrdersModule)},
+  {path:'detail/:id',loadChildren:()=>import('./detail/detail.module').then(m=>m.DetailModule)},
  /* {path:'orders',component:OrdersListComponent}*/
   ]
 
