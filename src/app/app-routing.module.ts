@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {OrdersListComponent} from './orders/orders-list/orders-list.component'
+import {ProductsComponent} from './productspage/products/products.component'
 
-import {MessagesListComponent} from './messages/messages-list/messages-list.component'
+import {HomepageComponent} from './home/homepage/homepage.component'
 const routes: Routes = [
-  {path:'',loadChildren:()=>import('./messages/messages.module').then(m=>m.MessagesModule)},
-  {path:'orders/:id',loadChildren:()=>import('./orders/orders.module').then(m=>m.OrdersModule)},
+  {path:'',loadChildren:()=>import('./home/homepage.module').then(m=>m.HomepageModule)},
+  {path:'productspage/:id',loadChildren:()=>import('./productspage/productspage.module').then(m=>m.ProductspageModule)},
   {path:'detail/:id',loadChildren:()=>import('./detail/detail.module').then(m=>m.DetailModule)},
- /* {path:'orders',component:OrdersListComponent}*/
+ /* {path:'productspage',component:ProductsComponent}*/
   ]
 
 @NgModule({

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 //@ts-ignore
-import * as alldata from '../../../assets/mushroomDataBase.json';
+//import * as alldata from '../../../assets/mushroomDataBase.json';
 
+import {ApiService} from '../../api.service';
 
 @Component({
   selector: 'app-detail',
@@ -14,7 +15,8 @@ export class DetailComponent implements OnInit {
    detail;
     num=1;
     singlePrice=0;
-  constructor(private route:ActivatedRoute) {
+   description=''
+  constructor(private route:ActivatedRoute,private api:ApiService) {
 
 
    }
@@ -30,10 +32,26 @@ export class DetailComponent implements OnInit {
     let _this=this;
     this.route.params.subscribe(function(params)
     {
-  
+
         //@ts-ignore
-        _this.detail=alldata.default.filter(item=>item.id==params['id'])[0]
-        _this.singlePrice=_this.detail.price;
+        //_this.detail=alldata.default.filter(item=>item.id==params['id'])[0]
+
+    _this.api.getData(params).subscribe((sqldata)=>{
+        // @ts-ignore
+        let data= sqldata[0];
+  _this.detail= {
+            'id':data.mushroom_id,
+            'title':data.title,
+            'price':data.price,
+            'subtitle':data.subtitle,
+            'imgUrl':data.img,
+            'rate':_this.api.rateForm(data.rate),
+          }
+      _this.singlePrice=_this.detail.price;
+      _this.description=data.description
+        })
+
+
     })
   }
 

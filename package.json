@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gitpage":"ng build --prod --output-path docs --base-href /mushroom/"
+    "gitpage": "ng build --prod --output-path docs --base-href /mushroom/"
   },
   "private": true,
   "dependencies": {

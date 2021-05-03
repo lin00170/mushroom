@@ -12,11 +12,11 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatInputModule} from '@angular/material/input';
 import {MatTreeModule} from '@angular/material/tree';
-
+import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 
-import {MessagesListComponent} from './messages/messages-list/messages-list.component'
+import {HomepageComponent} from './home/homepage/homepage.component'
 
 
 @NgModule({
@@ -26,6 +26,7 @@ import {MessagesListComponent} from './messages/messages-list/messages-list.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     //Material
     BrowserAnimationsModule,
     MatGridListModule,

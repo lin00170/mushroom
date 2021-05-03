@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MessagesRoutingModule } from './messages-routing.module';
-import { MessagesListComponent } from './messages-list/messages-list.component';
+import { HomepageRoutingModule } from './homepage-routing.module';
+import { HomepageComponent } from './homepage/homepage.component';
 import { MatSidenavModule } from "@angular/material/sidenav";
 //swiper
 import { SwiperComponent } from "../swiper/swiper.component";
@@ -13,11 +13,11 @@ import {FormsModule} from "@angular/forms";
 import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
-  declarations: [MessagesListComponent,
+  declarations: [HomepageComponent,
     SwiperComponent],
   imports: [
     CommonModule,
-    MessagesRoutingModule,
+    HomepageRoutingModule,
     MatSidenavModule,
     MatListModule,
     MatCardModule,
@@ -27,4 +27,4 @@ import {MatCardModule} from '@angular/material/card';
     FormsModule
   ]
 })
-export class MessagesModule { }
+export class HomepageModule { }
