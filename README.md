@@ -1,7 +1,12 @@
-# MyApp
-# Test 1#
+# Summary 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+
+## Effect display
+![HOME](https://github.com/lin00170/AngularPHP/blob/main/picture/store.gif)
+
+## linking to the website
+- Please click [webpage](https://feixiangdjames.github.io/webproject/) to visit the Front-end of the website building with Angular.
 
 ## Development server
 
