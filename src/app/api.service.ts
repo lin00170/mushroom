@@ -7,7 +7,7 @@ import {Observable} from "rxjs";
 export class ApiService {
   url:string
   constructor(private http: HttpClient) {
-    this.url = 'http://34.68.209.140/mushroom/show';
+    this.url = 'https://myprojectcms.tk/mushroom/show';
   }
 //get data from api of server
   getData(params: { id: any }){
